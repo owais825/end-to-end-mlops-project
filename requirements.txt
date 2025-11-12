@@ -11,5 +11,5 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
-
+tqdm
 -e .
