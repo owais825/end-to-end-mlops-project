@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Aasif/end-to-end-mlops-project/mlruns/0/2248f6199bca49daa518250e55b68cb7/artifacts
+end_time: 1763031616170
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2248f6199bca49daa518250e55b68cb7
+run_name: hilarious-elk-37
+run_uuid: 2248f6199bca49daa518250e55b68cb7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763031608119
+status: 3
+tags: []
+user_id: Aasif
