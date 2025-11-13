@@ -1,18 +1,11 @@
-FROM python:3.11-slim-buster
-
-# Install dependencies needed for apt and AWS CLI
-RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends \
-        awscli \
-        curl \
-        gnupg \
-        ca-certificates \
-        lsb-release \
-        sudo \
-        unzip \
-    && rm -rf /var/lib/apt/lists/*
+FROM python:3.11-bullseye
 
 WORKDIR /app
+
+# Install AWS CLI
+RUN apt-get update -y && \
+    apt-get install -y awscli unzip curl sudo && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
